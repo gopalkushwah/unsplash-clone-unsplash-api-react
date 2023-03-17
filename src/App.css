@@ -1,38 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-search {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  margin: 1rem 7%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.362);
+  padding: 1rem;
+  border-radius: 2rem;
+
 }
 
-.App-link {
-  color: #61dafb;
+.nav-search label {
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-search input {
+  width: 60%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.nav-search button {
+  font-size: .8rem;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.362);
+
+  border-radius: 2rem;
+  background: transparent;
+  padding: .4rem 3rem;
+
+}
+
+.nav-search button:hover {
+  border: 2px solid rgb(252, 0, 0);
+  border-radius: 2rergb(255, 0, 0);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.362);
+
+  background: transparent;
+  padding: .4rem 3rem;
+
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.gallery img {
+  width: 30%;
+  margin: 5px;
+
 }
